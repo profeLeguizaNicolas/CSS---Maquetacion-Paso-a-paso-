@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Maquetación (Documentacion).</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagenes/icono.png" type="image/x-icon">
+</head>
+<body>
+    <h1><span class="celeste">CSS</span> - Maquetación Documentación.</h1>
+    <div class="center">
+        <img src="Imagenes/imagen1.png" alt="">
+    </div>
+    
+    <p>
+        La maquetación en <span class="celeste">CSS</span> tiene como finalidad brindar al usuario una estructura visual avanzada, personalizada y atractiva, que facilite la identificación de cada parte del contenido y destaque los elementos más importantes según el caso.
+    </p>
+
+    <p>
+        En esta ocasión comenzaremos con ejemplos de maquetación en <span class="celeste">CSS</span>. Para ello, primero estableceremos la estructura básica en <span class="naranja">HTML</span>. Dentro del documento agregaremos un <code class="gris">&lt;<span class="verde">header</span>&gt;</code>, seguido de un <code class="gris">&lt;<span class="verde">article</span>&gt;</code>, y dentro de este último incluiremos un <code class="gris">&lt;<span class="verde">aside</span>&gt;</code> y dos <code class="gris">&lt;<span class="verde">section</span>&gt;</code>, cada una con una clase diferente: una será <code class="celeste">sec1</code> y la otra <code class="celeste">sec2</code>. finalmente, añadiremos el pie de página, representando por el <code class="gris">&lt;<span class="verde">footer</span>&gt;</code>.
+    </p>
+    <fieldset>
+        ⚠️<b><u>Importante</u>: No debemos olvidar vincular el archico <span class="celeste">CSS</span> al documento <span class="naranja">HTML</span>.</b> ⚠️
+    </fieldset>
+    <p>
+        Además, cada sección deberá contener información. En el <code class="gris">&lt;<span class="verde">header</span>&gt;</code> colocaremos un título con la etiqueta <span class="verde">h1</span>. En cada section dentro del artículo utilizaremos subtítulos como <span class="verde">h2</span>, <span class="verde">h3</span> o <span class="verde">h4</span>. Para el <code class="gris">&lt;<span class="verde">footer</span>&gt;</code>, incluiremos un párrafo que servirá de contenido de práctica.
+    </p>
+    <p>
+        De esta manera tendremos listo el <code class="gris">&lt;<span class="verde">body</span>&gt;</code> del documento, que nos permitirá trabajar en el ejemplo de maquetación en <span class="celeste">CSS</span>.
+    </p>
+<pre><code class="cpp">    <span class="gris">&lt;<span class="verde">body</span>&gt;
+        &lt;<span class="verde">header</span>&gt;
+            &lt;<span class="verde">h1</span>&gt;Encabezado&lt;/<span class="verde">h1</span>&gt;
+        &lt;/<span class="verde">header</span>&gt;
+        &lt;<span class="verde">article</span>&gt;
+            &lt;<span class="verde">aside</span>&gt;
+                &lt;<span class="verde">h2</span>&gt;Aside&lt;/<span class="verde">h2</span>&gt;
+            &lt;/<span class="verde">aside</span>&gt;
+            &lt;<span class="verde">section</span> <span class="celeste">class="sec1"</span>&gt;
+                &lt;<span class="verde">h3</span>&gt;Primer Sección&gt;/<span class="verde">h3</span>&gt;
+            &lt;/<span class="verde">section</span>&gt;
+            &lt;<span class="verde">section</span> <span class="celeste">class="sec2"</span>&gt;
+                &lt;<span class="verde">h4</span>&gt;Segunda Sección&lt;/<span class="verde">h4</span>&gt;
+            &lt;/<span class="verde">section</span>&gt;
+        &lt;/<span class="verde">article</span>&gt;
+        &lt;<span class="verde">footer</span>&gt;
+            &lt;<span class="verde">p</span>&gt;Pie de página&lt;/<span class="verde">p</span>&gt;
+        &lt;/<span class="verde">footer</span>&gt;
+    &lt;/<span class="verde">body</span>&gt;</span></code></pre>
+    <br>
+    <p>
+        A continuación, una imagen demostrativa de nuestro documento <span class="naranja">HTML</span>, sin estilos <span class="celeste">CSS</span>:
+    </p>
+    <div class="center">
+        <img src="Imagenes/imagen2.png" alt="">
+    </div>
+    <p>
+        Ahora comenzaremos a trabajar con nuestro código <span class="celeste">CSS</span>. El primer elemento al que aplicaremos estilo será al <code class="gris">&lt;<span class="verde">header</span>&gt;</code>. Para ello, le asignaremos un color de fondo negro utilizando la propiedad <code class="celeste">background-color</code> con la declaración de <code class="gris">black 🔳</code>. Además, modificaremos el contenido del elemento <code class="verde">h1</code> para que el texto se vea en color blanco, lo cual haremos a través de la propiedad <code class="celeste">color</code>, declarando el valor <code class="gris">white 🔲</code>.
+    </p>
+<pre><code class="cpp">    <span class="dorado">header{
+        <span class="celeste">background-color</span>: 🔳<span class="naranja">black</span>;
+        <span class="celeste">color</span>: 🔲<span class="naranja">white</span>;
+    }</span></code></pre><br>
+    <p>
+        A continuación, le daremos colores de fondo a los demás elementos <code class="gris">&lt;<span class="verde">aside</span>&gt;</code> y le daremos <span class="celeste">background-color</span> de color azul <code class="naranja">🟦 blue</code>. 
+    </p>
+    <p>
+        Así se tendría que estar viendo nuestro documento:
+    </p>
+    <div class="center">
+        <img src="Imagenes/imagen3.png" alt="">
+    </div>
+    <p>
+        Ahora aplicaremos estilos de fondo a diferentes elementos. A la clase <code class="celeste">sec1</code> le asignaremos un color de fonde rojo, mientras que a la clase <code class="celeste">sec2</code> le daremos un color de fondo <i>aqua</i>. Recuerde que en <span class="celeste">CSS</span>, para seleccionar una clase debemos colocar un punto antes de su nombre. Finalmente, al elemento <code class="gris">&lt;<span class="verde">footer</span>&gt;</code> le estableceremos un color de fondo amarillo.
+    </p>
+<pre><code class="cpp">     <span class="dorado">.sec1{
+            <span class="celeste">background-color</span>: <span class="naranja">🟥red</span>;
+        }
+        <span class="dorado">.sec2{
+            <span class="celeste">background-color</span>: <span class="naranja">aqua</span>;
+        }
+        <span class="dorado">footer{
+            <span class="celeste">background-color</span>: <span class="naranja">🟨 yellow</span>;
+        }</span></code></pre><br>
+        <p>
+            A continuación, veremos en una imagen como nos debe quedar el documento de ejemplo:
+        </p>
+        <div class="center">
+            <img src="Imagenes/imagen4.png" alt="">
+        </div>
+        <p>
+            Por el momento, únicamente hemos trabajado con los colores de los elementos. A continuación, comenzaremos con la maquetación. Para ello, en el <code class="gris">&lt;<span class="verde">body</span>&gt;</code> asignaremos la propiedad <span class="celeste">width</span> (Ancho) con el valor de <span class="naranja">100vw</span> y la propiedad <span class="celeste">height</span> (Alto) con el valor <span class="naranja">100vh</span>. Estas unidades representan el <span class="naranja">100%</span> del ancho y de la altura de la ventana del navegador, respectivamente. Este tipo de maquetación es dinámica, lo que significa que se ajusta automáticamente al tamaño de la ventana. En la actualidad, este enfoque es muy utilizado, ya que permite que el diseño sea responsivo y se adapte fácilmente a diferentes tamaños de pantalla.
+        </p>
+        <p>
+            Para distribuir el espacio entre los elementos, asignaremos al encabezado un ancho de <code class="naranja">100vw</code>, de modo que ocupe todo el ancho del documento, y una altura de <code class="naranja">18vh</code>. Luego, crearemos un elemento <span class="verde">div</span> que contendrá al <span class="verde">aside</span> y al <span class="verde">article</span>. A este contenedor le aplicaremos la propiedad <span class="celeste">display</span> coon el valor <span class="naranja">flex</span>, lo que permitirá ubicar ambos elementos uno al lado del otro.
+        </p>
+        <p>
+            El <span class="verde">aside</span> tendrá un ancho de <span class="naranja">30vw</span> y una altura de <span class="naranja">54vh</span>, mientras que el <span class="verde">article</span> ocupará el espacio restante y tendrá una altura de <span class="naranja">54vh</span>. A continuacion, observaremos en la siguiente imagen cómo debería quedar nuestro documento.
+        </p>
+        <div class="center">
+            <img src="Imagenes/imagen5.png" alt="">
+        </div>
+        <p>
+            Continuaremos con <code class="celeste">sec1</code>. Le daremos el resto del alto que serían <span class="naranja">20vh</span>, que sería la misma altura que el <span class="verde">aside</span>
+        </p>
+        <b><u>Código de ejemplo</u>:</b> <br>
+<pre><code class="cpp">    <span class="dorado">header{
+        <span class="celeste">background-color</span>: <span class="naranja">🔳 black</span>;
+        <span class="celeste">color</span>: <span class="naranja">⬜ white</span>;
+        <span class="celeste">height</span>: <span class="naranja">18vh</span>;
+        <span class="celeste">width</span>: <span class="naranja">100vw</span>;
+    }
+    div{
+        <span class="celeste">display</span>: <span class="naranja">flex</span>;
+    }
+    aside{
+        <span class="celeste">background-color</span>: <span class="naranja">🟦 blue</span>;
+        <span class="celeste">width</span>: <span class="naranja">30vw</span>;
+        <span class="celeste">height</span>:<span class="naranja">20vh</span>;
+    }
+    .sec1{
+        <span class="celeste">background-color</span>: <span class="naranja">🟥 red</span>;
+        <span class="celeste">height</span>: <span class="naranja">20vh</span>;
+    }
+    .sec2{
+        <span class="celeste">background-color</span>: <span class="naranja">aqua</span>;
+    }
+    footer{
+        <span class="celeste">background-color</span>: <span class="naranja">yellow</span>;    
+    }</span></code></pre><br>
+    <b><u>Documento</u>:</b><br><br>
+    <div class="center">
+        <img src="Imagenes/imagen6.png" alt="">
+    </div>
+    <p>
+        A continuación, trabajaremos con la <span class="celeste">sec2</span>, asignándole un ancho de <span class="naranja">100vw</span> y altura de <span class="naranja">24vh</span>. Finalmente, nos queda el <span class="verde">footer</span>, al cual le daremos un ancho total de <span class="naranja">100vw</span> y una altura correspondiente al especio restante. Si al total de 100 restamos la altura del encabezado (18)y la del artículo (54), obtenemos <span class="naranja">18vh</span>, que será la altur asignada al <span class="verde">footer</span> para completar toda la estructurra del <span class="verde">body</span>.
+    </p>
+    <b><u>Documento</u>:</b><br><br>
+    <div class="center">
+        <img src="Imagenes/imagen7.png" alt="">
+    </div>
+    <p>
+        Solo nos queda eliminar los márgenes predeterminados de laas etiquetas <code class="verde">h1</code>, <code class="verde">h2</code>, <code class="verde">h3</code>, <code class="verde">h4</code> y <code class="verde">p</code>. Así como el margen que el <span class="verde">body</span> trae por defecto, para eliminarlo  utilizaremos el selector de elementos indicando <span class="verde">body</span> y le asignaremos la propiedad de <code class="celes">margin: <span class="naranja">0</span>;</code>.
+    </p>
+    <b><u>Documento</u>:</b><br><br>
+    <div class="center">
+        <img src="Imagenes/imagen8.png" alt="">
+    </div>
+   <br>
+   <hr>
+   <br>
+</body>
+</html>
